@@ -1,8 +1,8 @@
 export const center = [41.3392, 14.5225];
 
 export const bounds = L.latLngBounds(
-  [41.22, 14.42], // Sud-Ovest (longitudine più piccola = più a sinistra)
-  [41.44, 14.72]  // Nord-Est (latitudine più grande = più in alto)
+  [41.22, 14.42], 
+  [41.44, 14.72]  
 );
 
 export const markers = [
@@ -54,6 +54,7 @@ export const markers = [
     lng: 14.49242,
     audio: "../../media/audio/Il-temporale.mp3",
     image: "../../media/photos/Il_temporale.jpg",
+    excludeFromRouting: true, 
   },
   {
     name: "Al Bar",
@@ -102,7 +103,7 @@ export const markers = [
     lat: 41.3495,
     lng: 14.51957,
     audio: "../../media/audio/Alba-Marcellino.mp3",
-    image: "../../media/photos/.jpg",
+    image: "", 
   },
   {
     name: "Ponte Di Legno",
@@ -119,4 +120,3 @@ export const markers = [
     image: "../../media/photos/il_flauto.jpg",
   }
 ];
-
