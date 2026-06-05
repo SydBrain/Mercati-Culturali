@@ -57,13 +57,6 @@ export const markers = [
     excludeFromRouting: true, 
   },
   {
-    name: "Al Bar",
-    lat: 41.33638,
-    lng: 14.51124,
-    audio: "../../media/audio/Al-Bar.mp3",
-    image: "",
-  },
-  {
     name: "Suonata Cusanese",
     lat: 41.34007,
     lng: 14.50811,
