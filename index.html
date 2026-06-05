@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Leaflet Routing Machine -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <link rel="icon" href="./media/logos/Marker_mappa_1.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <title>Moti Rurali - Mappa Interattiva</title>
+</head>
+<body>
+  <header class="flex">
+    <div>
+      <h1>Moti Rurali <br /> Pratiche Artistiche In Transito</h1>
+    </div>
+    <div>
+      <p>Mappa Sonora Interattiva</p>
+    </div>
+    <div>
+      <img class="mercati-logo" src="/media/logos/LOGO_MC.png" alt="logo mercati culturali" />
+    </div>
+  </header>
+
+  <main>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
