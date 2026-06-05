@@ -1,129 +1,12 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 body {
   line-height: 1;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+table { border-collapse: collapse; border-spacing: 0; }
 
 header {
   position: fixed;
@@ -132,12 +15,13 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: #672483;
-  padding: 2rem;
+  transition: transform 500ms ease;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
-header {
-  transition: transform 500ms ease;
-  z-index: 1000;
+header > div > h1 {
+  font-size: 1.5rem;
 }
 
 header.hidden {
@@ -156,30 +40,20 @@ header.hidden {
   z-index: 1;
 }
 
-.popup-custom {
-  font-family: sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
 .flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex > div {
-	width: 20%;
-	text-align: center;
-	font-size: 1.5rem;
+    width: 20%;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .mercati-logo {
-	max-width: 15%;
-}
-
-.leaflet-control-attribution {
-	display: none;
+    max-width: 15%;
 }
 
 .popup-custom {
@@ -195,7 +69,6 @@ header.hidden {
   color: #fff;
   text-align: center;
   box-sizing: border-box;
-  z-index: 5000;
 }
 
 .popup-image {
@@ -205,8 +78,8 @@ header.hidden {
   object-fit: cover;
 }
 
-.popup-title {
-  background: #000 !important;
+.leaflet-popup-content .popup-title {
+  background: #000;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.5em 0.75em;
@@ -218,22 +91,20 @@ header.hidden {
   max-width: 300px;
   min-width: 220px;  
   display: block;
-}
-
-.leaflet-popup {
-
+  margin: 0 auto;
 }
 
 .leaflet-popup-content {
   margin: 5px;
 }
 
-.leaflet-popup-content-wrapper {
+.leaflet-container .leaflet-popup-content-wrapper {
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateY(10px);
   opacity: 0;
-  background-color: #000000 !important;
-  box-shadow: 0 3px 14px #60257b !important;
+  background-color: #000000;
+  box-shadow: 0 3px 14px #60257b;
+  border-radius: 12px;
 }
 
 .popup-fadein .leaflet-popup-content-wrapper {
@@ -241,16 +112,11 @@ header.hidden {
   opacity: 1;
 }
 
-.leaflet-control-zoom {
-	display: none;
-}
-
-.leaflet-popup-tip {
-  background: #000 !important; 
-  color: #000 !important;
+.leaflet-container .leaflet-popup-tip {
+  background: #000; 
   box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 }
 
-.leaflet-routing-alt {
+.leaflet-routing-container {
   display: none;
 }
