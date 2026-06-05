@@ -25,10 +25,6 @@ The entire stack runs **fully offline** — no backend, no external API calls be
 * **Responsive Layout** with mobile-specific breakpoints for panel width, image height, and header sizing
 * **Dark Editorial UI** built with CSS custom properties, `backdrop-filter` glass surfaces, and `Special Elite` / `Barlow Condensed` typography
 
----
-
-## 📸 Screenshots
-
 ### Map View
 The main interface as projected during the live performance with custom markers distributed across the territory and the stylized routing line connecting each recording station.
 
